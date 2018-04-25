@@ -64,7 +64,7 @@ input {
     font-size: 1rem;
     -webkit-appearance: none;
     width: 60vw;
-    height:30px;
+    height: 30px;
 }
 
 #popular-searches {
@@ -87,7 +87,7 @@ ul#popular-searches li {
 
 .square {
     border: 1px solid black;
-    height: 16vw;
+    height: 15vw;
 }
 
 .mobile-square-0-0 { grid-column: 1 / 2; grid-row: 1 / 2; }
@@ -106,6 +106,10 @@ ul#popular-searches li {
 .mobile-square-2-3 { grid-column: 4 / 5; grid-row: 3 / 4; }
 
 @media screen and (min-width: 768px) {
+    
+    input {
+        height: 40px;
+    }
     
     /* main tags */
     .dragontown-map {
@@ -185,5 +189,4 @@ ul#popular-searches li {
 
 footer p {
     text-align: center;
-    height: 2rem;
 }
