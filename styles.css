@@ -9,7 +9,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
+    font-family: sans-serif;
     font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.4;
 }
 
 /* header tags */
@@ -48,14 +54,17 @@ nav ul {
 
 .search-section {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
 }
 .search-box {
     display: inline-block;
 }
 
 input {
+    font-size: 1rem;
+    -webkit-appearance: none;
     width: 60vw;
+    height:30px;
 }
 
 #popular-searches {
@@ -68,12 +77,12 @@ ul#popular-searches li {
 
 .dragontown-map {
     width: 80vw;
-    margin: 0 auto;
-    padding: 8px;
+    margin: 0 auto 1rem auto;
+    padding: 0.5rem;
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8px;
+    grid-gap: 0.5rem;
 }
 
 .square {
@@ -172,4 +181,9 @@ ul#popular-searches li {
     #square-5-7 { grid-column: 8 / 9; grid-row: 6 / 7; }
     #square-5-8 { grid-column: 9 / 10; grid-row: 6 / 7; }
     #square-5-9 { grid-column: 10 / 11; grid-row: 6 / 7; }
+}
+
+footer p {
+    text-align: center;
+    height: 2rem;
 }
