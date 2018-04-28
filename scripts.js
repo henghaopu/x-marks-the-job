@@ -68,9 +68,9 @@ function clearLawyerJobPosition() {
     var square2 = document.getElementById("square-2-5")
     var square3 = document.getElementById("square-2-6")
     // building links
-    square1.children[0].setAttribute("href", "")
-    square2.children[0].setAttribute("href", "") //"javascript:void(0)"
-    square3.children[0].setAttribute("href", "")
+    square1.children[0].setAttribute("href", "#")
+    square2.children[0].setAttribute("href", "#") //"javascript:void(0)"
+    square3.children[0].setAttribute("href", "#")
     // building images
     square1.children[0].children[0].setAttribute("src", "/images/building5.svg") 
     square2.children[0].children[0].setAttribute("src", "/images/building4.svg") 
