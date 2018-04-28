@@ -83,7 +83,7 @@ ul#popular-searches li {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 0.5rem;
-    background-image: url("/images/land.jpeg");
+    background-image: url("/images/land.jpg");
     /*background-position: center top; */
     background-size: 80vw; 
 }
