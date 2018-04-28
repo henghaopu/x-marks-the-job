@@ -41,7 +41,7 @@ spotKeyword = function(keywordId) {
 //    var imageSourceArray = imageSource.split('/')
 //    var imageName = imageSourceArray[imageSourceArray.length - 1]
 //    console.log(imageName)
-//    if(imageName === "building-5-ffcc00.svg") {
+//    if(imageName === "building5Yellow.svg") {
 //        window.location.href = "job.html";
 //    }
 //}
@@ -55,9 +55,9 @@ function markLawyerJobPosition() {
     square2.children[0].setAttribute("href", "job.html")
     square3.children[0].setAttribute("href", "job.html")
     // building images
-    square1.children[0].children[0].src = "/images/building-5-ffcc00.svg"
-    square2.children[0].children[0].src = "/images/building-4-ffcc00.svg"
-    square3.children[0].children[0].src = "/images/building-4-ffcc00.svg"
+    square1.children[0].children[0].src = "/images/building5Yellow.svg"
+    square2.children[0].children[0].src = "/images/building4Yellow.svg"
+    square3.children[0].children[0].src = "/images/building4Yellow.svg"
     square1.children[0].children[0].style.width = '100%' 
     square2.children[0].children[0].style.width = '100%' 
     square3.children[0].children[0].style.width = '100%'
@@ -72,7 +72,7 @@ function clearLawyerJobPosition() {
     square2.children[0].setAttribute("href", "javascript:void(0)")
     square3.children[0].setAttribute("href", "javascript:void(0)")
     // building images
-    square1.children[0].children[0].src = "/images/building-5.svg"
-    square2.children[0].children[0].src = "/images/building-4.svg"
-    square3.children[0].children[0].src = "/images/building-4.svg"
+    square1.children[0].children[0].src = "/images/building5.svg"
+    square2.children[0].children[0].src = "/images/building4.svg"
+    square3.children[0].children[0].src = "/images/building4.svg"
 }
