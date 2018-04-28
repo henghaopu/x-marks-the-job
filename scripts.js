@@ -72,7 +72,7 @@ function clearLawyerJobPosition() {
     square2.children[0].setAttribute("href", "javascript:void(0)")
     square3.children[0].setAttribute("href", "javascript:void(0)")
     // building images
-    square1.children[0].children[0].src = "/images/building5.svg"
-    square2.children[0].children[0].src = "/images/building4.svg"
-    square3.children[0].children[0].src = "/images/building4.svg"
+    square1.children[0].children[0].setAttribute("src", "/images/building5.svg") 
+    square2.children[0].children[0].setAttribute("src", "/images/building4.svg") 
+    square3.children[0].children[0].setAttribute("src", "/images/building4.svg") 
 }
