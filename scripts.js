@@ -55,9 +55,9 @@ function markLawyerJobPosition() {
     square2.children[0].setAttribute("href", "job.html")
     square3.children[0].setAttribute("href", "job.html")
     // building images
-    square1.children[0].children[0].src = "/images/building5Yellow.svg"
-    square2.children[0].children[0].src = "/images/building4Yellow.svg"
-    square3.children[0].children[0].src = "/images/building4Yellow.svg"
+    square1.children[0].children[0].src = "/images/building5yellow.svg"
+    square2.children[0].children[0].src = "/images/building4yellow.svg"
+    square3.children[0].children[0].src = "/images/building4yellow.svg"
     square1.children[0].children[0].style.width = '100%' 
     square2.children[0].children[0].style.width = '100%' 
     square3.children[0].children[0].style.width = '100%'
