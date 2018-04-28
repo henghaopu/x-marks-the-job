@@ -79,7 +79,7 @@ ul#popular-searches li {
 }
 
 .dragontown-map {
-    background-image: url('/images/terrain.jpg');
+    background-image: url('images/terrain.jpg');
     width: 80vw;
     margin: 0 auto 1rem auto;
     padding: 0.5rem;
