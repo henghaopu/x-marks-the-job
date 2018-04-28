@@ -4,7 +4,7 @@ window.onload = function() {
         if (searchBar.value === "lawyer") {
             markLawyerJobPosition()    
         } else {
-            clearLawyerJobPosition()
+            //clearLawyerJobPosition()
         }
     }
 }
