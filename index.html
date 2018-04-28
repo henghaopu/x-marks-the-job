@@ -31,8 +31,8 @@ coding style:
         
         <nav>
             <ul id="sign-in-sign-up">
-                <li id="sign-up"><a>Sign Up</a></li>
-                <li id="sign-in"><a>Sign In</a></li>
+                <li id="sign-up"><a id="sign-up-anchor" href="#">Sign Up</a></li>
+                <li id="sign-in"><a id="sign-in-anchor" href="#">Sign In</a></li>
             </ul>
         </nav>
     
@@ -47,12 +47,13 @@ coding style:
         
         <section class="search-section">
             <div class="search-box"> 
-                <input type="search" id="search-bar" name="search-bar" placeholder="keyword, job title, or company name" onkeyup="spotX(this.id)">
+                <input type="search" id="search-bar" name="search-bar" placeholder="keyword, job title, or company name" onkeyup="spotX(this.id)" onchange="spotX(this.id)">
                 <ul id="popular-searches">
                     <li>Trending:</li>
-                    <li><a>baker,</a></li>
-                    <li><a>carpenter,</a></li>
-                    <li><a>lawyer</a></li>
+                    <li><a id="keyword-lawyer" href="#" onclick="spotKeyword(this.id)">lawyer</a></li><span>,</span>
+                    <li><a id="keyword-baker">baker</a></li><span>,</span>
+                    <li><a id="keyword-carpenter">carpenter</a></li>
+                    
                 </ul>
             </div>
             
@@ -121,7 +122,7 @@ coding style:
             <div id="square-5-3" class="square mobile-square-2-1"><a><img src="images/3d-house-2.svg"></a></div>
             <div id="square-5-4" class="square mobile-square-2-1"><a><img src="images/3d-house-2.svg"></a></div>
             <div id="square-5-5" class="square mobile-square-2-2"></div>
-            <div id="square-5-6" class="square mobile-square-2-2"><a><img src="images/3d-building-5.svg"></a></div>
+            <div id="square-5-6" class="square mobile-square-2-2"><a><img id="image-5-6" src="images/3d-building-5.svg"></a></div>
             <div id="square-5-7" class="square mobile-square-2-3"><a><img src="images/3d-building-5.svg"></a></div>
             <div id="square-5-8" class="square mobile-square-2-3"><a><img src="images/3d-building-5.svg" ></a></div>
             <div id="square-5-9" class="square mobile-square-2-3"></div>
