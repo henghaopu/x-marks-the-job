@@ -1,7 +1,7 @@
 window.onload = function() {
     var searchBar = document.getElementById("search-bar");
     if (searchBar !== null) {
-        if (searchBar.value === "lawyer") {
+        if (searchBar.value.trim() === "lawyer") {
             markLawyerJobPosition()    
         } else {
             //clearLawyerJobPosition()
@@ -11,7 +11,7 @@ window.onload = function() {
 
 spotX = function(searchBarId) {
     var searchInputText = document.getElementById(searchBarId).value
-    if (searchInputText.toLowerCase() === "lawyer") {
+    if (searchInputText.toLowerCase().trim() === "lawyer") {
         markLawyerJobPosition()
     } else {
         clearLawyerJobPosition()
@@ -20,7 +20,7 @@ spotX = function(searchBarId) {
 
 spotKeyword = function(keywordId) {
     var id = keywordId.toLowerCase()
-    var jobTitle = document.getElementById(id).innerHTML
+    var jobTitle = document.getElementById(id).innerHTML.trim()
     switch (jobTitle) {
         case "lawyer":
             var searchBar = document.getElementById("search-bar")
@@ -68,10 +68,11 @@ function clearLawyerJobPosition() {
     var square2 = document.getElementById("square-2-5")
     var square3 = document.getElementById("square-2-6")
     // building links
-    square1.children[0].setAttribute("href", "#")
-    square2.children[0].setAttribute("href", "#") //"javascript:void(0)"
-    square3.children[0].setAttribute("href", "#")
+    square1.children[0].setAttribute("href", "javascript:void(0)")
+    square2.children[0].setAttribute("href", "javascript:void(0)") 
+    square3.children[0].setAttribute("href", "javascript:void(0)")
     // building images
+    // file path reference: https://www.w3schools.com/html/html_filepaths.asp
     square1.children[0].children[0].setAttribute("src", "images/building5.svg") 
     square2.children[0].children[0].setAttribute("src", "images/building4.svg") 
     square3.children[0].children[0].setAttribute("src", "images/building4.svg") 
