@@ -14,21 +14,53 @@ html {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     line-height: 1.4;
 }
 
 /* header tags */
-#xmj-logo {
-    float: left;
-    width: 1.6em;
-    margin: 2px 0 0 8px;
+nav {
+    background-color: #1DAFEC;
 }
 
-nav ul {
+#grid-unordered-list {
     display: grid;
-    grid-template-columns: 1fr 72px 72px;
+    grid-template-columns: 72px 1fr 85px;
     list-style-type: none;
+}
+
+#map-image {
+    padding: 1rem;
+    margin: auto 0;
+}
+
+#logo-word-list-item{
+    grid-column: 2 / 3;
+    margin: auto 0;
+}
+
+logo-word-anchor {
+    display: block;
+}
+
+#sign-in-list-item, #profile-list-item {
+    grid-column: 3 / 4;
+    margin: auto;    
+}
+
+#sign-in-list-item {
+    background-color: #f1e607;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+#profile-list-item {
+    display: none;
+}
+
+#menu {
+    height: 100%;
 }
 
 #sign-up {
@@ -36,31 +68,100 @@ nav ul {
     margin: 4px auto;
     padding: 4px;
 }
-#sign-in {
-    grid-column: 3 / 4;
-    background: grey;
-    color:white;
-    text-align: center;
-    border-radius: 6px;
-    margin: 4px 4px;
-    padding: 4px;
+
+#profile img {
+    width: 2rem;
+}
+
+a#profile:hover,
+a#profile:focus {
+    color: #666666;
+}
+a#profile:active {
+    background-color: #cccccc;
+}
+
+/* silding box */
+#mainNav {
+    /* menu as a whole */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background-color: #f1e607;
+    transition: right 2s;
+    z-index: 1;
+    width: 25vw;
+    min-width: 10rem;
+}
+
+a#closeBtn:link,
+#closeBtn:visited {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+a#closeBtn:hover,
+a#closeBtn:focus {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+a#closeBtn:active {
+    color: red;
+    border: 1px solid #ffffff;
+}
+
+#mainNav ul {
+    list-style-type: none;
+    margin-top: 2.5rem;
+}
+
+#mainNav ul a:link,
+#mainNav ul a:visited {
+    text-decoration: none;
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #000000;
+}
+
+#mainNav ul a:hover,
+#mainNav ul a:focus {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* main tags */
 .tagline-section {
     text-align: center;
-    margin: 1rem;
+    margin: 2rem;
+}
+
+.tagline-section h1 {
+    margin: 0.5rem;
+}
+
+#search-bar {
+    margin: 0.5rem 0;
+    height: 2.5rem;
 }
 
 .search-section {
     text-align: center;
-    margin: 0 auto 1rem auto;
+    margin: 2rem auto 2rem auto;
 }
+
 .search-box {
     display: inline-block;
 }
-#keyword-lawyer, #keyword-carpenter, #keyword-baker, #sign-up-anchor, #sign-in-anchor {
-    text-decoration:none; 
+#keyword-lawyer, #keyword-carpenter, #keyword-baker, #logo-word-anchor, #sign-in-anchor {
+    text-decoration: none; 
 }
 
 input {
@@ -126,12 +227,23 @@ img {
 */
 @media screen and (min-width: 768px) {
     
+    h1 {
+        font-size: 1.6rem;
+    }
+    
     input {
         height: 40px;
     }
     
+    #logo-word-list-item{
+        margin: auto;
+        font-size: 1.6rem;
+    }
+    
     /* main tags */
     .dragontown-map {
+        width: 80vw;
+        background-size: 80vw; 
         grid-template-columns: repeat(10, 1fr);
     }
     
@@ -206,6 +318,35 @@ img {
     #square-5-9 { grid-column: 10 / 11; grid-row: 6 / 7; }
 }
 
-footer p {
-    text-align: center;
+footer {
+    padding: 1em; 
+    height: 5; 
+    background-color: darkgrey;
+    color: white;
+}
+.About us {
+    text-align: center;    
+}
+img#apple {
+    width: 3.5%;
+}
+
+img#android {
+    width: 3.5%;
+}
+
+img#apple:hover, img#apple:focus {
+    border: 1px solid #ffffff;
+    background-color: red;        
+}
+
+img#android:hover, img#android:focus {
+    border: 1px solid #ffffff;
+    background-color: limegreen;
+}
+
+#submit {
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 3rem;
 }

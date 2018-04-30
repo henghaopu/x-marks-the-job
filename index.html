@@ -16,6 +16,7 @@ coding style:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Find a decent job in Dragontown">
     <meta name="keywords" content="job, position, Dragontown">
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
     <title>X Marks the Job</title>
@@ -24,25 +25,46 @@ coding style:
 <body>
     
     <header>
-        
-        <a href="index.html" id="xmj-logo">
-            <img src="images/treasure-map.svg" alt="X Marks the Job">
-        </a>
-        
         <nav>
-            <ul id="sign-in-sign-up">
-                <li id="sign-up"><a id="sign-up-anchor" href="#">Sign Up</a></li>
-                <li id="sign-in"><a id="sign-in-anchor" href="#">Sign In</a></li>
+            <!-- 1x3 grid -->
+            <ul id="grid-unordered-list">
+                <!-- position 00 -->
+                <li>
+                    <a href="index.html">
+                        <img id="map-image" src="images/treasure-map.svg" alt="X Marks the Job">
+                    </a>
+                </li>
+                <!-- position 01 -->
+                <li id="logo-word-list-item">
+                    <a id="logo-word-anchor" href="index.html">X Marks the Job</a>
+                </li>
+                <!-- position 02 (contains two list items) -->
+                <li id="sign-in-list-item">
+                    <a id="sign-in-anchor" href="sign-in.html" onclick="">Sign In</a>
+                </li>
+                <li id="profile-list-item">
+                    <a id="profile" href="#" onClick="openNav()"><img src="images/anonymous-profile-girl.svg"></a>
+                </li>
             </ul>
+            <!-- silding box -->
+            <div id="mainNav"> 
+                <a id="closeBtn" href="#" onClick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a id="sign-out" href="#" onclick="switchToSignIn()">Sign Out</a></li>
+                    
+                </ul>
+            </div>
         </nav>
-    
     </header>
     
     <main>
         
         <section class="tagline-section">
-            <h1>X Marks the Job</h1>
-            <p>- Tagline -</p>
+            <h1>Find a Decent Job in Dragontown</h1>
+            <p>Equal Opportunity for All Species</p>
         </section>
         
         <section class="search-section">
@@ -132,7 +154,29 @@ coding style:
     </main>
     
     <footer>
-        <p>I am a footer</p>
+        <!-- This is where the logo would go </p>--> &copy;2018
+        <div class=" About us">
+            <p> About Us </p>
+            <p> Contact Us </p>
+            <p> Privacy Policy</p>
+            <p> User Agreement </p>
+        </div>
+        
+        <div class="Download the App">
+            <p> Download the app</p> 
+            <img src="images/apple.svg" alt= "apple" id="apple">
+            <img src="images/android.svg" alt="android" id="android">
+        </div>
+        
+        <div class= "For Employer">
+            <p> Post a Job </p>
+            <p> Check Qualifications </p>
+        </div>
+    
+        <div class= "For Employee"> 
+            <p> Contract Information </p>
+            <p> Help Center</p>
+        </div>
     </footer>
     
 </body>

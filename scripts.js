@@ -7,7 +7,16 @@ window.onload = function() {
             //clearLawyerJobPosition()
         }
     }
+    // use window.name property to store data between pages
+    if (window.name !== undefined) {
+        if(window.name === "true") {
+            document.getElementById("sign-in-list-item").style.display = "none"
+            document.getElementById("profile-list-item").style.display = "block"
+        }
+    }
 }
+
+
 
 spotX = function(searchBarId) {
     var searchInputText = document.getElementById(searchBarId).value
@@ -32,6 +41,18 @@ spotKeyword = function(keywordId) {
         case "carpenter":
             break;
     }
+}
+
+switchToProfile = function() {
+    window.name = "true"
+    window.location.href = "index.html"
+}
+
+switchToSignIn = function() {
+    document.getElementById("sign-in-list-item").style.display = "block"
+    document.getElementById("profile-list-item").style.display = "none"
+    closeNav()
+    window.name = undefined
 }
 
 //goToJobs = function(imageId) {
@@ -76,4 +97,14 @@ function clearLawyerJobPosition() {
     square1.children[0].children[0].setAttribute("src", "images/building5.svg") 
     square2.children[0].children[0].setAttribute("src", "images/building4.svg") 
     square3.children[0].children[0].setAttribute("src", "images/building4.svg") 
+}
+
+function openNav() {
+    // document.getElementById("mainNav").style.width = "25vw";
+    document.getElementById("mainNav").style.right = "0";
+}
+
+function closeNav() {
+    //  document.getElementById("mainNav").style.width = "0";
+    document.getElementById("mainNav").style.right = "-100%";
 }
