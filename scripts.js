@@ -1,3 +1,5 @@
+var isSerious = true
+
 window.onload = function() {
     var searchBar = document.getElementById("search-bar");
     if (searchBar !== null) {
@@ -13,17 +15,29 @@ window.onload = function() {
             document.getElementById("sign-in-list-item").style.display = "none"
             document.getElementById("profile-list-item").style.display = "block"
         }
+    } 
+    
+    if (!this.isSerious) {
+        document.getElementsByClassName("dragontown-map1")[0].style.display = "none"
+        document.getElementsByClassName("dragontown-map2")[0].style.display = "grid"
+        themeChangeBtn.innerHTML = "Yeah, bright!"
+        themeChangeBtn.style.backgroundColor = "#2BB0EA"
+    } else {
+        document.getElementsByClassName("dragontown-map1")[0].style.display = "grid"
+        document.getElementsByClassName("dragontown-map2")[0].style.display = "none"
+        themeChangeBtn.innerHTML = "Seriously, calm?"
+        themeChangeBtn.style.backgroundColor = "#909090"
     }
 }
-
-
 
 spotX = function(searchBarId) {
     var searchInputText = document.getElementById(searchBarId).value
     if (searchInputText.toLowerCase().trim() === "lawyer") {
         markLawyerJobPosition()
+        markLawyerJobPositionAtMap2()
     } else {
         clearLawyerJobPosition()
+        clearLawyerJobPositionAtMap2()
     }
 } 
 
@@ -99,6 +113,38 @@ function clearLawyerJobPosition() {
     square3.children[0].children[0].setAttribute("src", "images/building4.svg") 
 }
 
+function markLawyerJobPositionAtMap2() {
+    var block4 = document.getElementById("block-2-5")
+    var block5 = document.getElementById("block-2-6")
+    var block6 = document.getElementById("block-2-7")
+    // building links
+    block4.children[0].setAttribute("href", "job.html")
+    block5.children[0].setAttribute("href", "job.html")
+    block6.children[0].setAttribute("href", "job.html")
+    // building images
+    block4.children[0].children[0].setAttribute("src", "images/houses-3jobs.svg")
+    block5.children[0].children[0].setAttribute("src", "images/houses-3jobs.svg")
+    block6.children[0].children[0].setAttribute("src", "images/houses-3jobs.svg")
+    block4.children[0].children[0].style.width = '100%' 
+    block5.children[0].children[0].style.width = '100%' 
+    block6.children[0].children[0].style.width = '100%'
+}
+
+function clearLawyerJobPositionAtMap2() {
+    var block4 = document.getElementById("block-2-5")
+    var block5 = document.getElementById("block-2-6")
+    var block6 = document.getElementById("block-2-7")
+    // building links
+    block4.children[0].setAttribute("href", "javascript:void(0)")
+    block5.children[0].setAttribute("href", "javascript:void(0)") 
+    block6.children[0].setAttribute("href", "javascript:void(0)")
+    // building images
+    // file path reference: https://www.w3schools.com/html/html_filepaths.asp
+    block4.children[0].children[0].setAttribute("src", "images/houses.svg") 
+    block5.children[0].children[0].setAttribute("src", "images/houses.svg") 
+    block6.children[0].children[0].setAttribute("src", "images/houses.svg") 
+}
+
 function openNav() {
     // document.getElementById("mainNav").style.width = "25vw";
     document.getElementById("mainNav").style.right = "0";
@@ -107,4 +153,27 @@ function openNav() {
 function closeNav() {
     //  document.getElementById("mainNav").style.width = "0";
     document.getElementById("mainNav").style.right = "-100%";
+}
+
+function changeTheme(id) {
+    var themeChangeBtn = document.getElementById(id)
+    if (themeChangeBtn.innerHTML === "Seriously, calm?") {
+        document.getElementsByClassName("dragontown-map1")[0].style.display = "none"
+        document.getElementsByClassName("dragontown-map2")[0].style.display = "grid"
+        themeChangeBtn.innerHTML = "Yeah, bright!"
+        themeChangeBtn.style.backgroundColor = "#2BB0EA"
+        
+        document.getElementById("search-bar").style.backgroundColor = "#FFFF00"
+        
+        isSerious = false
+    } else {
+        document.getElementsByClassName("dragontown-map1")[0].style.display = "grid"
+        document.getElementsByClassName("dragontown-map2")[0].style.display = "none"
+        themeChangeBtn.innerHTML = "Seriously, calm?"
+        themeChangeBtn.style.backgroundColor = "#909090"
+        
+        document.getElementById("search-bar").style.backgroundColor = "white"
+        
+        isSerious = true
+    }
 }

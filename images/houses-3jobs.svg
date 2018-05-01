@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 82 67.36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #ff0;
+      }
+
+      .cls-4 {
+        font-size: 16px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-1" width="64.76" height="64.76" transform="translate(690 336.6)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_38" data-name="Group 38" transform="translate(-690 -347)">
+    <g id="Mask_Group_54" data-name="Mask Group 54" class="cls-2" transform="translate(0 13)">
+      <g id="houses" transform="translate(690 336.6)">
+        <path id="Path_65" data-name="Path 65" d="M64.114,25.479,42.373,9.084a1.624,1.624,0,0,0-1.956,0l-3.574,2.7-3.574-2.7a1.624,1.624,0,0,0-1.956,0l-3.485,2.628L24.343,9.084a1.624,1.624,0,0,0-1.956,0L.646,25.479A1.625,1.625,0,0,0,0,26.776v27.6A1.624,1.624,0,0,0,1.624,56H63.136a1.624,1.624,0,0,0,1.624-1.624v-27.6a1.624,1.624,0,0,0-.646-1.3Zm-2.6,27.276H55.657V26.776a1.624,1.624,0,0,0-.646-1.3L39.54,13.813l1.854-1.4,20.117,15.17Zm-14.781,0V26.776a1.624,1.624,0,0,0-.646-1.3L30.525,13.746l1.766-1.331,20.117,15.17v25.17H46.731Zm-20.706,0H20.706V40.978h5.319V52.755Zm3.248,0v-13.4a1.624,1.624,0,0,0-1.624-1.624H19.082a1.624,1.624,0,0,0-1.624,1.624v13.4H3.248V27.585l20.117-15.17,20.117,15.17v25.17Z"/>
+      </g>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" class="cls-3" transform="translate(737 347)">
+      <circle class="cls-5" cx="17.5" cy="17.5" r="17.5"/>
+      <circle class="cls-6" cx="17.5" cy="17.5" r="17"/>
+    </g>
+    <text id="_3" data-name="+3" class="cls-4" transform="translate(745 371)"><tspan x="0" y="0">+3</tspan></text>
+  </g>
+</svg>
