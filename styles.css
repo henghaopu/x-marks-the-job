@@ -464,3 +464,9 @@ img#android:hover, img#android:focus {
     padding: 1rem;
     font-size: 3rem;
 }
+
+#accordion h3 {
+    border: 1px solid black;
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+}

@@ -5,10 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
-    <title></title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    </script>
+    <title>Job Information and Application</title>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <!-- 1x3 grid -->
+            <ul id="grid-unordered-list">
+                <!-- position 00 -->
+                <li>
+                    <a href="index.html">
+                        <img id="map-image" src="images/treasure-map.svg" alt="X Marks the Job">
+                    </a>
+                </li>
+                <!-- position 01 -->
+                <li id="logo-word-list-item">
+                    <a id="logo-word-anchor" href="index.html">X Marks the Job</a>
+                </li>
+                <!-- position 02 (contains two list items) -->
+                <li id="sign-in-list-item">
+                    <a id="sign-in-anchor" href="sign-in.html" onclick="">Sign In</a>
+                </li>
+                <li id="profile-list-item">
+                    <a id="profile" href="#" onClick="openNav()"><img src="images/anonymous-profile-girl.svg"></a>
+                </li>
+            </ul>
+            <!-- silding box -->
+            <div id="mainNav"> 
+                <a id="closeBtn" href="#" onClick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a id="sign-out" href="#" onclick="switchToSignIn()">Sign Out</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="accordion">
+            <h3>Description</h3>
+            <div>
+            <p>Our national firm Pan LLC seeks Tech Transactions & Data Privacy Associate Attorney with 2-5 years of experience to join our team located in Dragontown, Story Book. Our Ideal candidate has to possess excellent academic credentials, experience in a law firm or similar environment, and superior writing, communication, and problem-solving skills. 
+            </p>
+            </div>
+            <h3>Qualifications</h3>
+            <div>
+                <ul>
+                    <li>JD from a US ABA-accredited law school</li>
+                    <li>Admission to state Bar</li>
+                    <li>Experience must include transactional expertise in software, data, complex licensing, outsourcing legal experience</li>
+                    <li>Data privacy and data security law experience is highly preferred</li>
+                    <li>Team player with excellent communication skills</li>
+                </ul>
+            </div>
+            <h3>Interview Questions</h3>
+            <div>
+                <ul>
+                    <li>Tell me about yourself.</li>
+                    <li>What is your greatest strength?</li>
+                    <li>What is your greatest weakness?</li>
+                    <li>Why should we hire you?</li>
+                    <li>What is your salary expectation?</li>
+                    <li>Why do you want this job?</li>
+                    <li>What are your goals for the future?</li>
+                </ul>
+            </div>
+            <h3>Test</h3>
+            <div>
+                <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.</p>
+                <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div>
+        </div>
+    </main>
     
 </body>
 </html>
