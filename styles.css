@@ -211,11 +211,12 @@ ul#popular-searches li {
     margin: 0 auto 1rem auto;
     padding: 0.5rem;
     border: 1px solid black;
-    display: none;
+    display: grid;  /* none */
     grid-template-columns: repeat(4, 1fr);
     /*grid-gap: 0.5rem;*/
-    opacity: 0;
+    /*opacity: 0; */ 
     /*-webkit-transition: opacity 2s linear;*/
+    -webkit-transition: 0.5s linear;
 }
 
 .block {
@@ -512,6 +513,7 @@ a#apply-btn {
     border: 1px solid black;
     padding: 0.5rem;
     float: right;
+    background-color: #F6F6F6
 }
 
 #accordion h3 {
@@ -533,6 +535,16 @@ a#apply-btn {
 
 .content li {
     list-style-position: inside;
+}
+
+.accordion-header {
+    width: 1.5rem;    
+    float: right;
+}
+
+.accordion-content {
+    width: 1rem; 
+    margin-left: 0.5rem;
 }
 
 /* Sign-in-Page by Mariana-------------------*/
@@ -633,7 +645,6 @@ a{
     padding:.5rem 1.75rem 0 1.75rem;
     text-align: left;
 }
-
 
 #reset-support p{
     font-size: 0.889rem;

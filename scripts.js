@@ -4,7 +4,8 @@ window.onload = function() {
     var searchBar = document.getElementById("search-bar");
     if (searchBar !== null) {
         if (searchBar.value.trim() === "lawyer") {
-            markLawyerJobPosition()    
+            // two maps
+            //markLawyerJobPosition()    
         } else {
             //clearLawyerJobPosition()
         }
@@ -17,6 +18,8 @@ window.onload = function() {
         }
     } 
     
+    // two maps
+    /*
     var themeChangeBtn = document.getElementById("theme-change-btn")
     if (!this.isSerious) {
         document.getElementsByClassName("dragontown-map1")[0].style.display = "none"
@@ -29,15 +32,18 @@ window.onload = function() {
         themeChangeBtn.innerHTML = "Seriously, calm?"
         themeChangeBtn.style.backgroundColor = "#909090"
     }
+    */
 }
 
 spotX = function(searchBarId) {
     var searchInputText = document.getElementById(searchBarId).value
     if (searchInputText.toLowerCase().trim() === "lawyer") {
-        markLawyerJobPosition()
+        // two maps
+        //markLawyerJobPosition()
         markLawyerJobPositionAtMap2()
     } else {
-        clearLawyerJobPosition()
+        // two maps
+        //clearLawyerJobPosition()
         clearLawyerJobPositionAtMap2()
     }
 } 
@@ -171,7 +177,7 @@ function changeTheme(id) {
         
         document.getElementsByClassName("dragontown-map2")[0].style.setProperty("-webkit-transition", "0.5s linear");
         // not functioning
-        document.getElementsByClassName("dragontown-map2")[0].style.opacity = 1
+        //document.getElementsByClassName("dragontown-map2")[0].style.opacity = 1
         
         isSerious = false
     } else {
