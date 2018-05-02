@@ -493,8 +493,44 @@ img#android:hover, img#android:focus {
     font-size: 3rem;
 }
 
+/* job.html */
+
+#accordion {
+    margin: 1rem 0 0 0;
+}
+
+#job-header {
+    border: 1px solid black;
+    padding: 1rem;
+    width: 90vw;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+a#apply-btn {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0.5rem;
+    float: right;
+}
+
 #accordion h3 {
     border: 1px solid black;
     background-color: #F6F6F6;
     padding: 0.5rem;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.content {
+    line-height: 1.4rem;
+    width: 90vw;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0.5rem;
+}
+
+.content li {
+    list-style-position: inside;
 }
