@@ -534,3 +534,151 @@ a#apply-btn {
 .content li {
     list-style-position: inside;
 }
+
+/* Sign-in-Page by Mariana-------------------*/
+
+/* Modular Scale Major Second { ratio: 1.125}/  0.79em, 0.889em, 1em, 1.125em, 1.226em, 1.424em, 1.602em, 1.802em, 
+2.027em, 2.281em, 2.566em, 2.887em, 3.653em, 4.11em, 4.624em, 5.202em, 5.852em, 6.583em,*/
+
+#sign-in-page-container{
+    background-color: rgba(0, 39, 59, 0.92);
+    text-align: center;
+    
+}
+
+
+h2{
+    font-size: 1.22rem;
+    background-color:#00aeef; 
+    color: white;
+    padding: 1.75rem;
+    font-family: 'Open Sans', Roboto, sans-serif;
+    letter-spacing: .5px;
+}
+
+
+#sign-in-box-container{
+    display: inline-block;
+    margin: 1.75rem;
+    
+}
+
+.sign-in-box-content{
+    background-color: white;
+    padding-bottom: 1.75rem;    
+}
+
+
+.sign-in-bar{
+    border-radius: 25px;
+    border: 2px solid #00aeef;
+    padding: 1rem;
+    margin-top: 1.75rem;
+    width: 60%;
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-family: 'raleway', Roboto, sans-serif;
+    color: #00273b;
+}
+
+#sign-in-button{
+    display: inline-block;
+    background-color: #00273b ;
+    margin: 1.75rem 0 0 ;
+    color: white;
+    width: 150px;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+#sign-in-button:hover {
+    background-color:#00aeef ;
+    color: #00273b;
+    
+} 
+
+#Account-Retrieval{
+    margin-top: .5rem;
+    
+}
+
+#Account-Retrieval p{
+    font-size: 0.889rem;
+    line-height: 1.75;
+    }
+
+
+#Account-Retrieval p:hover{
+    background-color:rgb(0, 39, 59) ;
+    color: white;
+    padding: .5rem;   
+}
+
+#Account-Retrieval p:active{
+    background-color:#00aeef ;
+    color: white;
+    padding: .5rem;  
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* Password Reset Page ----------*/
+.password-reset-box p{
+    font-size: .889rem;
+    padding:.5rem 1.75rem 0 1.75rem;
+    text-align: left;
+}
+
+
+#reset-support p{
+    font-size: 0.889rem;
+    line-height: 1.75;
+    text-align: center;
+    padding: .5rem 1.75rem;
+}
+
+#password-send {
+    color:white;
+}
+
+/* password reset page end*/
+
+/* profile page --------------------*/
+
+.background-color{
+    background-color: #00273b;
+}
+
+#profile-page-container{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 650px;
+    padding: 1.75rem;
+    background-color: white;
+}
+
+.profile-img{
+    display: inline-block;
+    background-color: aquamarine;
+    border-radius: 50%;
+    padding: 3.5rem 1.75rem;      
+}
+
+.user-info{
+    text-align: left;
+}
+
+.user-info h1{ 
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+.personal-description{
+    text-align: left;
+    margin-top: 1.75rem;
+}
