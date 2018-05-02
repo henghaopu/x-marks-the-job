@@ -40,8 +40,12 @@ nav {
     font-size: 1.3rem;
 }
 
-logo-word-anchor {
+#logo-word-anchor {
     display: block;
+    margin: -2px 0 0 -10px;
+    color: #02273A;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #sign-in-list-item, #profile-list-item {
@@ -151,6 +155,7 @@ a#closeBtn:active {
 
 .tagline-section h1 {
     margin: 0.5rem;
+    font-style: italic;
 }
 
 #search-bar {
@@ -296,10 +301,6 @@ img {
         height: 40px;
     }
     
-    #logo-word-list-item {
-        /*margin: auto;*/
-        font-size: 1.6rem;
-    }
     #sign-in-list-item {
         font-size: 1.2rem;
     }
