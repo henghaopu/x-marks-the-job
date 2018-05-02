@@ -161,8 +161,10 @@ a#closeBtn:active {
 #search-bar {
     margin: 0.5rem 0;
     height: 2.5rem;
-    border: 1px solid black; 
-    border-radius: 10px;
+    /*border: 1px solid black; */
+    border: 2px solid #00aeef;
+    border-radius: 25px;
+    padding: 0 0 0 1rem;
 }
 
 .search-section {
