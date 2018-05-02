@@ -17,6 +17,7 @@ window.onload = function() {
         }
     } 
     
+    var themeChangeBtn = document.getElementById("theme-change-btn")
     if (!this.isSerious) {
         document.getElementsByClassName("dragontown-map1")[0].style.display = "none"
         document.getElementsByClassName("dragontown-map2")[0].style.display = "grid"
@@ -165,6 +166,13 @@ function changeTheme(id) {
         
         document.getElementById("search-bar").style.backgroundColor = "#FFFF00"
         
+        document.getElementById("sign-in-list-item").style.backgroundColor = "#FEEF35"
+        document.getElementById("sign-in-anchor").style.color = "#07273B"
+        
+        document.getElementsByClassName("dragontown-map2")[0].style.setProperty("-webkit-transition", "0.5s linear");
+        // not functioning
+        document.getElementsByClassName("dragontown-map2")[0].style.opacity = 1
+        
         isSerious = false
     } else {
         document.getElementsByClassName("dragontown-map1")[0].style.display = "grid"
@@ -173,6 +181,11 @@ function changeTheme(id) {
         themeChangeBtn.style.backgroundColor = "#909090"
         
         document.getElementById("search-bar").style.backgroundColor = "white"
+        
+        document.getElementById("sign-in-list-item").style.backgroundColor = "#07273B"
+        document.getElementById("sign-in-anchor").style.color = "white"
+        // not functioning
+        document.getElementsByClassName("dragontown-map2")[0].style.opacity = 0
         
         isSerious = true
     }

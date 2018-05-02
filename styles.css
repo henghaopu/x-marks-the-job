@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -25,18 +25,19 @@ nav {
 
 #grid-unordered-list {
     display: grid;
-    grid-template-columns: 72px 1fr 85px;
+    grid-template-columns: 72px 1fr 90px;
     list-style-type: none;
 }
 
 #map-image {
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
     margin: auto 0;
 }
 
 #logo-word-list-item{
     grid-column: 2 / 3;
     margin: auto 0;
+    font-size: 1.3rem;
 }
 
 logo-word-anchor {
@@ -49,10 +50,14 @@ logo-word-anchor {
 }
 
 #sign-in-list-item {
-    background-color: #f1e607;
+    background-color: #07273B; /* random yellow: #f1e607, logo yellow: #FEEF35 */
     border: 1px solid black;
     border-radius: 4px;
     padding: 4px;
+}
+
+#sign-in-anchor {
+    color: white;
 }
 
 #profile-list-item {
@@ -88,7 +93,7 @@ a#profile:active {
     top: 0;
     right: -100%;
     bottom: 0;
-    background-color: #f1e607;
+    background-color: lightgrey;   /* #f1e607 */
     transition: right 2s;
     z-index: 1;
     width: 25vw;
@@ -151,6 +156,8 @@ a#closeBtn:active {
 #search-bar {
     margin: 0.5rem 0;
     height: 2.5rem;
+    border: 1px solid black; 
+    border-radius: 10px;
 }
 
 .search-section {
@@ -201,11 +208,15 @@ ul#popular-searches li {
     border: 1px solid black;
     display: none;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5rem;
+    /*grid-gap: 0.5rem;*/
+    opacity: 0;
+    /*-webkit-transition: opacity 2s linear;*/
 }
 
 .block {
     height: 15vw;
+    padding: 0.5rem;
+    border: 0.1px solid lightgrey;
 }
 
 /*
@@ -265,8 +276,14 @@ img {
     background-color: #909090;
     color: white;
 }
+
 #theme-change-btn:hover {
-    
+    /* backgound-color doesn't work */ 
+    color: #FFFD38;   /*#FFFD38 FEEF35*/
+}
+
+#theme-change-btn {
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -279,9 +296,12 @@ img {
         height: 40px;
     }
     
-    #logo-word-list-item{
-        margin: auto;
+    #logo-word-list-item {
+        /*margin: auto;*/
         font-size: 1.6rem;
+    }
+    #sign-in-list-item {
+        font-size: 1.2rem;
     }
     
     /* main tags */
@@ -429,6 +449,13 @@ img {
     
     .block {
         height: 6.2vw;
+    }
+    
+    #block-0-1, #block-0-3, #block-0-4, #block-0-5, #block-0-6, #block-0-8, #block-0-9, 
+    #block-1-1, #block-1-9, 
+    #block-4-5, #block-4-6,
+    #block-5-2, #block-5-5, #block-5-6, #block-5-7  {
+        border: 0.1px solid lightgrey;
     }
 }
 
