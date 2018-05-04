@@ -3,17 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Find a decent job in Dragontown">
-    <meta name="keywords" content="job, position, Dragontown">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,700i|Raleway" rel="stylesheet">
     <script src="scripts.js"></script>
-    <title>Sign In</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    </script>
+    <title>Job Information and Application</title>
 </head>
 
 <body>
-    
     <header>
         <nav>
             <!-- 1x3 grid -->
@@ -53,46 +56,49 @@
         </nav>
     </header>
     
-    <!-- Mariana-->
-    <div id="sign-in-page-container">
+    <main>
         
-        <div id="sign-in-box-container">
-            
-            <div class="sign-in-box-content">
-                <h2> Account Credentials</h2>
-             
-            
-            <div class="sign-in-box"> 
-                <input class="sign-in-bar"
-                       type="search" name="search-bar" placeholder="Username">
-                
-            </div>
-            
-             <div class="sign-in-box"> 
-                <input class="sign-in-bar"
-                       type="search" name="search-bar" placeholder=" Password">     
-            </div>
-                
-            <div id="sign-in-button">
-                <p onclick="switchToProfile()">Sign In</p>
-                
-                </div>
+        <section class="scrollable-menu">
+            <p style="color:white; padding: 0.35rem">Saved Job</p>
+            <a href="#associate-attorney">Associate Attorney</a>
+            <a href="#civil-attorney">Civil Attorney</a>
+            <a href="#transactional-attorney">Transactional Attorney</a>
+            <a href="#tech-transactions-&-data-privacy-associate-attorney ">Tech Transactions & Data Privacy Associate Attorney </a>
+        </section>
         
-                <div id="Account-Retrieval">  
-             
-                    <a href="password-reset-page.html">
-                        <p> Forgot Username or password?</p>     
-                    </a>
-       
-                        <p> Don't have an account?</p>
-                </div>
+        <section id="person-header">
+            <h3>William Smith the 3rd</h3>
+            <p>Technology Lawyer</p>
+        </section>
 
-        </div>
+        <section id="accordion">
+            <h3>Personal Description</h3>
+            <div class="content">
+                <p>I'm a business and IP lawyer for emerging growth companies in the tech and media industries, with deep expertise in social media and consumer Internet businesses. Having built the in-house legal function from scratch, I understand the needs and priorities of entrepreneurial growth companies. I can offer the sophistication of a large firm practice all with the personal touch and cost-effectiveness of a small firm.</p> 
+            </div>
+            <h3>Education<img id="qualifications-image" class="accordion-header" src="images/check-mark.svg" alt="check"></h3>
+            <div class="content">
+                <p>Dragontown University, Dragontown, SB				June 2016
+Master of Arts in Criminal Justice 
+GPA 4.0
+</p>
+                <br>
+                <p>Wolftown University, Wolftown, FT					May 2012
+Bachelors of Arts in Criminology 
+</p>
+            </div>
+            <h3>Resume</h3>
+            <div id="interview-questions-content" class="content">
+                <p>Your resume is linked to your account.</p>
+            </div>
+            <h3>references<img id="test-image" class="accordion-header" src="images/check-mark.svg" alt="check mark"></h3>
+            <!--div class="content" style="border-bottom: 1px solid black;">
+                <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.</p>
+                <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div-->
+        </section>       
         
-        
-        </div>
-   
-    </div> 
+    </main>
     
     <footer>
             
@@ -127,7 +133,7 @@
     
             <div class= "job-applicant-content"> 
                 <h2> For Job Applicants</h2>
-               <p> Sign Up </p>
+                <p> Sign Up </p>
                 <p> Sign In </p>
                 <p> Help Center</p>
                 <p> User Agreement </p>
@@ -139,6 +145,5 @@
             </div>
     </footer>
     
-    <!--button id="submit" onclick="switchToProfile()">Sign In</button-->
 </body>
 </html>

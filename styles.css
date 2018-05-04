@@ -29,14 +29,29 @@ h1, h2, h3, h4, h5, h6 {
             0.5 rem 
 */
 
+/* Mariana added Fontfamily Choices/ all other code unless otherwise stated was coded by Heng-Hau-Pu*/
+
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', Roboto, sans-serif;
     font-size: 16px;
 }
 
+html {
+    line-height: 1.75; /* 16/28 divisible by 2 and 4*/
+}
+
 h1 {
+    font-family: 'Open Sans', Roboto, sans-serif;
     font-size: 1.4rem;
+    font-weight: 700;
     line-height: 2.1rem;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 1.602rem;
+    line-height: 1.75;
+    
 }
 
 /* header tags */
@@ -318,34 +333,6 @@ img {
     cursor: pointer;
 }
 
-/* footer */
-footer {
-    padding: 1em; 
-    height: 5; 
-    background-color: darkgrey;
-    color: white;
-}
-.About us {
-    text-align: center;    
-}
-img#apple {
-    width: 3.5%;
-}
-
-img#android {
-    width: 3.5%;
-}
-
-img#apple:hover, img#apple:focus {
-    border: 1px solid #ffffff;
-    background-color: red;        
-}
-
-img#android:hover, img#android:focus {
-    border: 1px solid #ffffff;
-    background-color: limegreen;
-}
-
 /*----------------------------new code----*/
 
 /* footer info*/
@@ -442,8 +429,14 @@ section.scrollable-menu a:hover {
 }
 
 #job-header {
-
     border: 1px solid black;
+    padding: 1.4rem;
+    width: 90vw;
+    margin: 1.4rem auto;
+    overflow: auto;
+}
+
+#person-header {
     padding: 1.4rem;
     width: 90vw;
     margin: 1.4rem auto;
@@ -645,6 +638,41 @@ a{
     margin-top: 1.75rem;
 }
 
+
+/* About Page content*/
+#about-page-container{
+    
+    text-align: center;
+    
+}
+
+#about-page-container h1{
+    margin-top: 1.75rem;
+}
+.about-page-content{
+    
+    margin-bottom: 3.5rem;
+    border-bottom: solid .5px #00273b;
+    max-width: 500px;
+    margin:0 auto;
+   /* box-shadow: 5px 10px 5px #888888;*/
+    
+}
+
+.about-page-content p{
+    margin-bottom: .875rem;
+}
+
+.about-page-content h2 {
+    
+    display: inline-block;
+    background-color: white;
+    color: #00273b;
+  
+    
+}
+
+
 @media screen and (min-width: 768px) {
     
     h1 {
@@ -825,6 +853,10 @@ a{
         max-width: 500px;
     }
     
+    .content p, .content li {
+        line-height: 1.75rem;
+    }   
+    
     /* footer media query*/
     #footer-content-container{
         text-align: center;
@@ -875,6 +907,10 @@ a{
         margin: 0 auto;
         max-width: 500px;
     }
+    
+    .content p, .content li {
+        line-height: 1.95rem;
+    } 
     
     #footer-content-container {
         display: grid;
