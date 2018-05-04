@@ -15,10 +15,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height-desktop: 1.45   
 
     line height scale:
-            3.5rem   (0.7 * 5)
-            2.8rem   (0.7 * 4)
-            2.1rem   (0.7 * 3)  h1
-            1.4rem   (0.7 * 2)  
+            3.5rem  
+            2.8rem  
+            2.1rem     h1
+            1.4rem     
             0.7rem
     font size scale:
             3   rem     
@@ -437,7 +437,7 @@ section.scrollable-menu a:hover {
 }
 
 #accordion {
-    margin: 1rem 0 0 0;
+    margin: 1.4rem 0 1.4rem 0;
 }
 
 #job-header {
@@ -479,6 +479,7 @@ a#apply-btn:hover {
 
 .content li {
     list-style-position: inside;
+    line-height: 1.4rem;
 }
 
 .content p {
