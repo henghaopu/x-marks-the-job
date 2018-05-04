@@ -452,6 +452,7 @@ section.scrollable-menu a:hover {
 }
 
 a#apply-btn {
+    text-align: center;
     grid-column: 2 / 3;
     display: inline-block;
     border: 1px solid black;
