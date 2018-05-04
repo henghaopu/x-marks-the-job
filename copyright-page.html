@@ -7,27 +7,49 @@
     <meta name="description" content="Find a job in Dragontown">
     <meta name="keywords" content="job, position, Dragontown">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,700i|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="sign-in-up-pass-reset%20.css">
+    <link rel="stylesheet" href="styles.css">
     <title>X Marks the Job</title>
 </head>
     
 <body>
-    
-    <header>
-        
-        <a href="index.html" id="xmj-logo">
-            <img src="images/Artboard%201xhdpi.png" alt="X Marks the Job">
-        </a>
-        
+     <header>
         <nav>
-            <ul id="sign-in-sign-up">
-                <li id="sign-up"><a href="sign-in.html">Sign in</a></li>
-                <li id="sign-in"><a>Menu</a></li>
-                
+            <!-- 1x3 grid -->
+            <ul id="grid-unordered-list">
+                <!-- position 00 -->
+                <li>
+                    <a href="index.html">
+                        <img id="map-image" src="images/logo.svg" alt="X Marks the Job">
+                    </a>
+                </li>
+                <!-- position 01 -->
+                <!--li id="logo-word-list-item">
+                    <a id="logo-word-anchor" href="index.html">Marks the Job</a>
+                </li-->
+                <!-- position 02 (contains two list items) -->
+                <li id="sign-in-list-item">
+                    <a id="sign-in-anchor" href="sign-in.html" onclick="">Sign In</a>
+                </li>
+                <li id="profile-list-item">
+                    <a id="profile" href="#" onClick="openNav()" onmouseover="changeFace(this.id)" onmouseout="changeFaceBack(this.id)"><img src="images/happy.svg" alt="anonymous profile"></a>
+                </li>
             </ul>
+            <!-- silding box -->
+            <div id="mainNav"> 
+                <a id="closeBtn" href="#" onClick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a id="sign-out" href="#" onclick="switchToSignIn()">Sign Out</a></li>
+                    
+                </ul>
+            </div>
         </nav>
-    
     </header>
+    
     
     <div id="about-page-container">
         
@@ -44,86 +66,134 @@
            
             
             <div id="Smiley Icon 2 ">
-            <h3> Smiley Icon 2 </h3>
-                <div>Icons made by <a href="https://www.flaticon.com/authors/baianat" title="Baianat">Baianat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                <h3> Smiley Icon 2 </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/baianat" title="Baianat">Baianat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   
             </div>
+            
             <div id="Houses">
-            <h3> Houses </h3>
-                <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-                <div id="Grass">
-            <h3> Grass </h3>
-               <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-                    
-                    
-
-             <div id="Cave ">
-            <h3> Cave </h3>
-               <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-                 
-                 
- <div id="Smiley Icon">
-            <h3> Smiley Icon  </h3>
-                <div>Icons made by <a href="https://www.flaticon.com/authors/baianat" title="Baianat">Baianat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-
-  <div id="Sea">
-            <h3> Sea </h3>
-                <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-      
-<div id="Android">
-            <h3> Android </h3>
-              <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-<div id="Apple">
-            <h3> Apple </h3>
-              <div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-  <div id="Check Mark">
-            <h3> Check Mark </h3>
-              <div>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      
-      <div id="Lock">
-            <h3> Lock </h3>
-              <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-          
-          
-<div id="Checkmark">
-            <h3> Checkmark </h3>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-
-<div id="Checkmark">
-            <h3> Checkmark </h3>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    
-    
-      <div id="Unlock">
-            <h3> Unlock </h3>
-           <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-    
-
-
+                <h3> Houses </h3>
+                    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                
+                  
             </div>
+
+            <div id="Grass">
+                <h3> Grass </h3>
+                    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+             </div>
+                    
+
+            <div id="Cave ">
+                <h3> Cave </h3>
+                    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+ 
             
-            
-            
-            
-            
+            <div id="Smiley Icon">
+                <h3> Smiley Icon  </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/baianat" title="Baianat">Baianat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+
+
+            <div id="Sea">
+                <h3> Sea </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+
+      
+            <div id="Android">
+                <h3> Android </h3>
+                    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+
+            <div id="Apple">
+                <h3> Apple </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+
+            <div id="Check Mark">
+                <h3> Check Mark </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+      
+            <div id="Lock">
+                <h3> Lock </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+          
+          
+            <div id="Checkmark">
+                <h3> Checkmark </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+          </div>
+
+
+            <div id="Checkmark">
+                <h3> Checkmark </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    
+            </div> 
+    
+    
+            <div id="Unlock">
+                <h3> Unlock </h3>
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+         
 
         </section>
     
-     
-    
-    
     </div>
     
+    
+  
+    
     <footer>
-        <p>I am a footer</p>
+            
+        <div id="footer-content-container">
+        
+            <div id="logo-about-us-container">
+                <div class="footer-logo-img"> 
+                    <img src="images/xmj-logo-footer.svg" alt="X Marks the Job">      
+                </div>
+            
+                <div id="about-us">
+                    <p> <a href="about-page.html">About Us &#9475;</a> Contact Us &#9475;  Privacy Policy&#9475; </p>
+                </div>
+        </div>
+            
+        <div id="employer-employee-container">    
+            
+            <div class= "employers-footer-info">
+                <h2> For Employers</h2>
+                <p> Sign Up </p>
+                <p> Post a Job </p>
+                <p> Company Contrats</p>
+                <p> Contract Information </p>
+                
+            </div>
+            
+             <div class="download-the-app">
+                <h2> Download the app</h2> 
+                <img src="images/apple.svg" alt= "apple" id="apple">
+                <img src="images/android.svg" alt="android" id="android">
+            </div>
+    
+            <div class= "job-applicant-content"> 
+                <h2> For Job Applicants</h2>
+               <p> Sign Up </p>
+                <p> Sign In </p>
+                <p> Help Center</p>
+                <p> User Agreement </p>
+            </div>
+            </div>  
+            
+            <p> Website Designers and Developers : Johnna Tombolillo, Heng-Hau-Pu, Mariana Diaz &#9475;&copy;2018</p>   
+            
+            </div>
     </footer>
+    
     
     </body>
     

@@ -361,7 +361,6 @@ footer h2{
 
 .footer-logo-img {
     display: inline-block;
-    border-bottom: 1px solid #00aeef;
     margin-bottom: .875rem;
     max-width: 245px;
     height: 75px;
@@ -888,7 +887,6 @@ a{
         text-align: center;
         margin:0;
         grid-column: 2/3;
-          background-color: #00aeef;
     }
 }
 
@@ -938,7 +936,6 @@ a{
     
     .download-the-app{
         grid-column: 5/6;
-        background-color: #00aeef;
     }
     
     .job-applicant-content{
@@ -949,4 +946,5 @@ a{
         padding-left: 32px
     }
 }
-/* footer media query done-----------new code end*/
+/* footer media query done-----------*/
+
