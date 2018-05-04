@@ -74,9 +74,9 @@ coding style:
                 <input type="search" id="search-bar" name="search-bar" placeholder="keyword, job title, company" onkeyup="spotX(this.id)" onchange="spotX(this.id)">
                 <ul id="popular-searches">
                     <li>Trending:</li>
-                    <li><a id="keyword-lawyer" href="#" onclick="spotKeyword(this.id)">lawyer,</a></li>
-                    <li><a id="keyword-baker">baker,</a></li>
-                    <li><a id="keyword-carpenter">carpenter</a></li>
+                    <li><a id="keyword-lawyer" href="#" onclick="spotKeyword(this.id)">lawyer</a></li>
+                    <li><a id="keyword-baker">, baker</a></li>
+                    <li><a id="keyword-carpenter">, carpenter</a></li>
                 </ul>
             </div>
             
@@ -229,29 +229,48 @@ coding style:
     </main>
     
     <footer>
-        <!-- This is where the logo would go </p>--> &copy;2018
-        <div class=" About us">
-            <p> About Us </p>
-            <p> Contact Us </p>
-            <p> Privacy Policy</p>
-            <p> User Agreement </p>
-        </div>
+            
+        <div id="footer-content-container">
         
-        <div class="Download the App">
-            <p> Download the app</p> 
-            <img src="images/apple.svg" alt= "apple" id="apple">
-            <img src="images/android.svg" alt="android" id="android">
+            <div id="logo-about-us-container">
+                <div class="footer-logo-img"> 
+                    <img src="images/xmj-logo-footer.svg" alt="X Marks the Job">      
+                </div>
+            
+                <div id="about-us">
+                    <p> <a href="about-page.html">About Us &#9475;</a> Contact Us &#9475;  Privacy Policy&#9475; </p>
+                </div>
         </div>
-        
-        <div class= "For Employer">
-            <p> Post a Job </p>
-            <p> Check Qualifications </p>
-        </div>
+            
+        <div id="employer-employee-container">    
+            
+            <div class= "employers-footer-info">
+                <h2> For Employers</h2>
+                <p> Sign Up </p>
+                <p> Post a Job </p>
+                <p> Company Contrats</p>
+                <p> Contract Information </p>
+                
+            </div>
+            
+             <div class="download-the-app">
+                <h2> Download the app</h2> 
+                <img src="images/apple.svg" alt= "apple" id="apple">
+                <img src="images/android.svg" alt="android" id="android">
+            </div>
     
-        <div class= "For Employee"> 
-            <p> Contract Information </p>
-            <p> Help Center</p>
-        </div>
+            <div class= "job-applicant-content"> 
+                <h2> For Job Applicants</h2>
+               <p> Sign Up </p>
+                <p> Sign In </p>
+                <p> Help Center</p>
+                <p> User Agreement </p>
+            </div>
+            </div>  
+            
+            <p> Website Designers and Developers : Johnna Tombolillo, Heng-Hau-Pu, Mariana Diaz &#9475;&copy;2018</p>   
+            
+            </div>
     </footer>
     
 </body>

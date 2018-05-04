@@ -8,14 +8,35 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+/*
+    font size of p: 16px
+    modular scale: 
+    line-height: 1.4    // 22.4px
+    line-height-desktop: 1.45   
+
+    line height scale:
+            3.5rem   (0.7 * 5)
+            2.8rem   (0.7 * 4)
+            2.1rem   (0.7 * 3)  h1
+            1.4rem   (0.7 * 2)  
+            0.7rem
+    font size scale:
+            3   rem     
+            2.5 rem   
+            2   rem     
+            1.5 rem  
+            16 px   (html)
+            0.5 rem 
+*/
+
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
 h1 {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
 }
 
 /* header tags */
@@ -30,10 +51,10 @@ nav {
 }
 
 #map-image {
-    padding: 1rem 0 1rem 1rem;
+    padding: 0.7rem 0 0.7rem 0.7rem;
     margin: auto 0;
 }
-
+/*
 #logo-word-list-item{
     grid-column: 2 / 3;
     margin: auto 0;
@@ -47,6 +68,7 @@ nav {
     font-style: italic;
     font-weight: bold;
 }
+*/
 
 #sign-in-list-item, #profile-list-item {
     grid-column: 3 / 4;
@@ -154,14 +176,14 @@ a#closeBtn:active {
 }
 
 .tagline-section h1 {
-    margin: 0.5rem;
+    margin: 0.7rem;
     font-style: italic;
     font-weight: 600;
 }
 
 #search-bar {
-    margin: 0.5rem 0;
-    height: 2.5rem;
+    margin: 0.7rem 0;
+    height: 2.8rem;
     /*border: 1px solid black; */
     border: 2px solid #00aeef;
     border-radius: 25px;
@@ -170,7 +192,7 @@ a#closeBtn:active {
 
 .search-section {
     text-align: center;
-    margin: 2rem auto 2rem auto;
+    margin: 2.1rem auto 2.1rem auto;
 }
 
 .search-box {
@@ -212,7 +234,7 @@ ul#popular-searches li {
 .dragontown-map2 {
     width: 80vw;
     margin: 0 auto 1rem auto;
-    padding: 0.5rem;
+    padding: 0.35rem;    /*0.5*/
     border: 1px solid black;
     display: grid;  /* none */
     grid-template-columns: repeat(4, 1fr);
@@ -224,7 +246,7 @@ ul#popular-searches li {
 
 .block {
     height: 15vw;
-    padding: 0.5rem;
+    padding: 0.35rem;
     border: 0.1px solid lightgrey;
 }
 
@@ -295,6 +317,7 @@ img {
     cursor: pointer;
 }
 
+/* footer */
 footer {
     padding: 1em; 
     height: 5; 
@@ -322,6 +345,72 @@ img#android:hover, img#android:focus {
     background-color: limegreen;
 }
 
+/*----------------------------new code----*/
+
+/* footer info*/
+footer{
+    
+    background-color: #363a3e;
+    text-align: left;
+    color: white;
+    font-size: .79rem;
+    
+}
+
+footer h2{
+    font-size: .889rem;
+    font-style: italic;
+    background-color: #363a3e;
+    padding: 0px;
+    letter-spacing: 1.25px;
+}
+
+#footer-content-container{
+    padding: .875rem;
+    text-align: center;
+    
+}
+
+.footer-logo-img {
+    display: inline-block;
+    border-bottom: 1px solid #00aeef;
+    margin-bottom: .875rem;
+    max-width: 245px;
+    height: 75px;
+}
+.footer-logo-img img{
+    width: 120px;
+    margin-top: 1.75rem;
+    margin-bottom: .875rem; 
+}
+
+
+#about-us {
+     max-width: 260x;
+}
+
+#about-us a{
+    color: white;
+    margin-top: -0px;
+    margin-left: 2px;
+}
+
+.download-the-app {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem; 
+}
+
+
+.download-the-app img {
+    margin-top: .875rem;
+    width: 40px;
+}
+
+#employer-employee-container{
+    margin-top: 1.75rem;
+    margin-bottom: .889rem;
+}
+
 #submit {
     margin: 0 auto;
     padding: 1rem;
@@ -340,7 +429,7 @@ section.scrollable-menu a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px;
+    padding: 0.7rem;
     text-decoration: none;
 }
 section.scrollable-menu a:hover {
@@ -353,9 +442,9 @@ section.scrollable-menu a:hover {
 
 #job-header {
     border: 1px solid black;
-    padding: 1rem;
+    padding: 1.4rem;
     width: 90vw;
-    margin: 1rem auto;
+    margin: 1.4rem auto;
     overflow: auto;
 }
 
@@ -392,14 +481,18 @@ a#apply-btn:hover {
     list-style-position: inside;
 }
 
+.content p {
+    line-height: 1.4rem;
+}
+
 .accordion-header {
-    width: 1.5rem;    
+    width: 1.4rem;    
     float: right;
 }
 
 .accordion-content {
     width: 1rem; 
-    margin-left: 0.5rem;
+    margin-left: 0.35rem;
 }
 
 /* Sign-in-Page by Mariana-------------------*/
@@ -728,4 +821,79 @@ a{
         margin: 0 auto;
         max-width: 500px;
     }
+    
+    /* footer media query*/
+    #footer-content-container{
+        text-align: center;
+    }
+    
+    #employer-employee-container{
+        text-align: left;
+        margin: 1.75rem auto;
+        width: 100%;
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: repeat(1fr);      
+        
+    }
+    
+    .employers-footer-info{
+        grid-column: 1/2;
+    }
+    .job-applicant-content{
+        grid-column: 3/4;
+        text-align: right
+    }
+  
+    
+    .download-the-app img{
+        display: inline-block;
+    }
+    .download-the-app {
+        text-align: center;
+        margin:0;
+        grid-column: 2/3;
+          background-color: #00aeef;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    
+    #footer-content-container {
+        display: grid;
+        grid-template-columns: repeat(1fr); 
+    }
+    
+    #logo-about-us-container{
+        text-align: left;
+        max-width: 280px;
+        grid-column: 1/2;
+        margin: 0;
+    }
+    
+    #employer-employee-container{
+        margin-top: -80px;
+        max-width: 1000px;
+    }
+    
+    .employers-footer-info{
+        grid-column: 4/5;
+        border-left: 2px solid white;
+        padding-left: 32px
+        
+    }
+    
+    .download-the-app{
+        grid-column: 5/6;
+        background-color: #00aeef;
+    }
+    
+    .job-applicant-content{
+        grid-column: 3/4;
+        text-align: left;
+        margin-top: -114px;
+        border-left: 2px solid white;
+        padding-left: 32px
+    }
+}
+/* footer media query done-----------new code end*/
