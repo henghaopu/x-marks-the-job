@@ -27,15 +27,15 @@
                     </a>
                 </li>
                 <!-- position 01 -->
-                <li id="logo-word-list-item">
+                <!--li id="logo-word-list-item">
                     <a id="logo-word-anchor" href="index.html">Marks the Job</a>
-                </li>
+                </li-->
                 <!-- position 02 (contains two list items) -->
                 <li id="sign-in-list-item">
                     <a id="sign-in-anchor" href="sign-in.html" onclick="">Sign In</a>
                 </li>
                 <li id="profile-list-item">
-                    <a id="profile" href="#" onClick="openNav()"><img src="images/anonymous-profile-girl.svg"></a>
+                    <a id="profile" href="#" onClick="openNav()" onmouseover="changeFace(this.id)" onmouseout="changeFaceBack(this.id)"><img src="images/happy.svg"></a>
                 </li>
             </ul>
             
@@ -66,7 +66,7 @@
         <section id="job-header">
             <p>Associate Attorney</p>
             <p>Pan LLC</p>
-            <a id="apply-btn">Apply</a>
+            <a id="apply-btn" onclick="apply()">Apply</a>
         </section>
 
         <section id="accordion">
@@ -74,7 +74,7 @@
             <div class="content">
                 <p>Our national firm Pan LLC seeks Tech Transactions & Data Privacy Associate Attorney with 2-5 years of experience to join our team located in Dragontown, Story Book. Our Ideal candidate has to possess excellent academic credentials, experience in a law firm or similar environment, and superior writing, communication, and problem-solving skills.</p>
             </div>
-            <h3>Qualifications<img class="accordion-header" src="images/check-mark.svg"></h3>
+            <h3>Qualifications<img id="qualifications-image" class="accordion-header" src="images/check-mark.svg"></h3>
             <div class="content">
                 <ol>
                     <li>JD from a US ABA-accredited law school</li>
@@ -84,8 +84,8 @@
                     <li>Team player with excellent communication skills</li>
                 </ol>
             </div>
-            <h3>Interview Questions<img class="accordion-header" src="images/unlock-blue.svg"></h3>
-            <div class="content">
+            <h3>Interview Questions<img id="interview-question-image" class="accordion-header" src="images/unlock-blue.svg"></h3>
+            <div id="interview-questions-content" class="content">
                 <ol>
                     <li>Tell me about yourself.<img class="accordion-content" src="images/microphone.svg"></li>
                     <li>What is your greatest strength?<img class="accordion-content" src="images/microphone.svg"></li>
@@ -96,7 +96,7 @@
                     <li>What are your goals for the future?<img class="accordion-content" src="images/microphone.svg"></li>
                 </ol>
             </div>
-            <h3>Test<img class="accordion-header" src="images/lock-red.svg"></h3>
+            <h3>Test<img id="test-image" class="accordion-header" src="images/check-mark.svg"></h3>
             <!--div class="content" style="border-bottom: 1px solid black;">
                 <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.</p>
                 <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>

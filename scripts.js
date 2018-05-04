@@ -12,11 +12,30 @@ window.onload = function() {
     }
     // use window.name property to store data between pages
     if (window.name !== undefined) {
-        if(window.name === "true") {
+        if (window.name === "true") {
+            // hide sign in icon
             document.getElementById("sign-in-list-item").style.display = "none"
+            // show anonymous icon
             document.getElementById("profile-list-item").style.display = "block"
         }
     } 
+    
+    // check whether current page is job.html or not
+    var apply = document.getElementById("apply-btn");
+    if (apply !== null) {
+        if (window.name !== undefined) {
+            if (window.name === "true") {
+                
+            } else {
+                document.getElementById("interview-question-image").setAttribute("src", "images/lock-red.svg")
+                document.getElementById("test-image").setAttribute("src", "images/lock-red.svg")
+                document.getElementById("qualifications-image").style.visibility = "hidden"
+                //document.getElementById("interview-questions-content").style.visibility = "hidden"
+            }
+        } else {
+            
+        }
+    }
     
     // two maps
     /*
@@ -162,6 +181,14 @@ function closeNav() {
     document.getElementById("mainNav").style.right = "-100%";
 }
 
+function changeFace(id) {
+    document.getElementById(id).children[0].setAttribute("src", "images/happy-round-eyes.svg")
+}
+
+function changeFaceBack(id) {
+    document.getElementById(id).children[0].setAttribute("src", "images/happy.svg")
+}
+
 function changeTheme(id) {
     var themeChangeBtn = document.getElementById(id)
     if (themeChangeBtn.innerHTML === "Seriously, calm?") {
@@ -194,5 +221,15 @@ function changeTheme(id) {
         document.getElementsByClassName("dragontown-map2")[0].style.opacity = 0
         
         isSerious = true
+    }
+}
+
+// job.html 
+function apply() {
+    console.log(window.name)
+    if (window.name === "true") {
+        alert('Application has been sent to this company.')
+    } else {
+        alert('Please sign in first.')
     }
 }
