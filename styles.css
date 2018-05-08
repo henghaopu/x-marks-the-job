@@ -70,6 +70,7 @@ nav {
     padding: 0.7rem 0.7rem 0.7rem 0.7rem;
     margin: auto 0;
 }
+
 /*
 #logo-word-list-item{
     grid-column: 2 / 3;
@@ -86,7 +87,12 @@ nav {
 }
 */
 
-#sign-in-list-item, #profile-list-item {
+#sign-in-list-item {
+    grid-column: 3 / 4;
+    margin: auto; 
+}
+
+#profile-list-item {
     grid-column: 3 / 4;
     margin: 0 auto;    
 }
