@@ -849,7 +849,7 @@ a{
     /* job */
     #job-header, #accordion {
         width: 60vw;
-        margin: 1rem auto;
+        margin: 1.4rem auto;
         max-width: 500px;
     }
     #accordion h3, .content {
@@ -903,7 +903,7 @@ a{
     #job-header, #accordion {
         font-size: 22px;
         width: 60vw;
-        margin: 1rem auto;
+        margin: 2.1rem auto;
         max-width: 600px;
     }
     
