@@ -893,17 +893,19 @@ a{
 @media screen and (min-width: 1200px) {
     
     /* job */
+    
     #job-header, #accordion {
         font-size: 22px;
         width: 60vw;
         margin: 1rem auto;
         max-width: 600px;
     }
+    
     #accordion h3, .content {
-        font-size: 20px;
+        font-size: 22px;
         width: 60vw;
-        margin: 0 auto;
-        max-width: 500px;
+        margin: 0rem auto;
+        max-width: 600px;
     }
     
     .content p, .content li {
