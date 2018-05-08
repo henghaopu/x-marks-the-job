@@ -88,7 +88,7 @@ nav {
 
 #sign-in-list-item, #profile-list-item {
     grid-column: 3 / 4;
-    margin: auto;    
+    margin: 0 auto;    
 }
 
 #sign-in-list-item {
