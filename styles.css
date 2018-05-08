@@ -419,6 +419,7 @@ section.scrollable-menu {
     background-color: #02283A;
     overflow: auto;
     white-space: nowrap;
+    height: 3.5rem;
 }
 section.scrollable-menu a {
     display: inline-block;
@@ -426,7 +427,9 @@ section.scrollable-menu a {
     text-align: center;
     padding: 0.7rem;
     text-decoration: none;
+    margin: 0.15rem;    
 }
+
 section.scrollable-menu a:hover {
     background-color: #777;
 }
